@@ -30,11 +30,11 @@
                 <div class="post-content">
                     {{ .Content }}
                 </div>
+                {{ template "_internal/disqus.html" . }}
             </div>
         </div>
     </div>
 </section>
 
-{{ partial "cta.html" . }}
 
 {{ end }}
