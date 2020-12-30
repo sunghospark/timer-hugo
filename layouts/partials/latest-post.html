@@ -6,7 +6,7 @@
         </div>        
         <div class="row">
             <div class="col-md-12">
-                {{ range last 1 (where .Site.RegularPages "Section" "blog")}}
+                {{ range first 1 (where .Site.RegularPages "Section" "blog")}}
                 <article class="wow fadeInDown" data-wow-delay=".3s" data-wow-duration="500ms">
                     <div class="blog-post-image">
                         <a href="{{ .Permalink }}">
